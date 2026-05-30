@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Спасибо за покупку — скачай гайд</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue: #4A6FA5;
+      --blue-light: #EEF3FB;
+      --peach: #F4A880;
+      --peach-light: #FEF3ED;
+      --dark: #2C2C2C;
+      --gray: #6B7280;
+      --white: #FFFFFF;
+      --radius: 16px;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: linear-gradient(135deg, #EEF3FB 0%, #FEF3ED 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 20px;
+      color: var(--dark);
+    }
+
+    .card {
+      background: white;
+      border-radius: 24px;
+      padding: 48px 40px;
+      max-width: 520px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 8px 40px rgba(74,111,165,0.12);
+    }
+
+    .check-circle {
+      width: 72px;
+      height: 72px;
+      background: linear-gradient(135deg, #4A6FA5, #F4A880);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+      font-size: 32px;
+    }
+
+    h1 {
+      font-size: 26px;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 12px;
+      color: var(--dark);
+    }
+
+    .subtitle {
+      font-size: 16px;
+      color: var(--gray);
+      margin-bottom: 36px;
+      line-height: 1.6;
+    }
+
+    .download-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: var(--peach);
+      color: white;
+      font-size: 18px;
+      font-weight: 700;
+      padding: 18px 32px;
+      border-radius: 100px;
+      text-decoration: none;
+      transition: transform 0.15s, box-shadow 0.15s;
+      box-shadow: 0 4px 20px rgba(244,168,128,0.4);
+      margin-bottom: 12px;
+    }
+
+    .download-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(244,168,128,0.5);
+    }
+
+    .download-btn .icon { font-size: 22px; }
+
+    .backup-link {
+      font-size: 13px;
+      color: var(--gray);
+      margin-bottom: 36px;
+    }
+
+    .backup-link a {
+      color: var(--blue);
+      text-decoration: none;
+    }
+
+    .backup-link a:hover { text-decoration: underline; }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #eee;
+      margin: 32px 0;
+    }
+
+    .next-step {
+      background: var(--blue-light);
+      border-radius: var(--radius);
+      padding: 24px;
+      text-align: left;
+    }
+
+    .next-step-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-bottom: 8px;
+    }
+
+    .next-step h3 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .next-step p {
+      font-size: 14px;
+      color: var(--gray);
+      line-height: 1.5;
+      margin-bottom: 14px;
+    }
+
+    .next-step-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--blue);
+      color: white;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 10px 20px;
+      border-radius: 100px;
+      text-decoration: none;
+      transition: opacity 0.15s;
+    }
+
+    .next-step-link:hover { opacity: 0.88; }
+
+    .instruction {
+      font-size: 13px;
+      color: var(--gray);
+      margin-top: 28px;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 480px) {
+      .card { padding: 36px 24px; }
+      h1 { font-size: 22px; }
+      .download-btn { font-size: 16px; padding: 16px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+
+  <div class="check-circle">✓</div>
+
+  <h1>Оплата прошла!<br>Забирай свой гайд 👇</h1>
+  <p class="subtitle">Нажми кнопку ниже — файл скачается на твоё устройство прямо сейчас</p>
+
+  <a href="https://drive.google.com/uc?export=download&id=1SUUDzlyRDl31KXGjPVP660h8bPtsruyi"
+     class="download-btn"
+     download>
+    <span class="icon">📥</span>
+    Скачать PDF-гайд
+  </a>
+
+  <p class="backup-link">
+    Не скачивается? Попробуй
+    <a href="https://disk.yandex.ru/d/JAppx_DMmyv9vw" target="_blank">Яндекс Диск</a>
+  </p>
+
+  <hr class="divider" />
+
+  <div class="next-step">
+    <div class="next-step-label">Следующий шаг</div>
+    <h3>Попробуй одну фразу сегодня вечером</h3>
+    <p>Открой гайд, найди ситуацию которая у вас самая частая — и скажи ребёнку именно эту фразу. Напиши мне что вышло 👇</p>
+    <a href="https://t.me/andrey_dzen" target="_blank" class="next-step-link">
+      ✍️ Написать в Telegram
+    </a>
+  </div>
+
+  <p class="instruction">
+    Сохрани страницу или ссылку на файл — гайд останется доступен для скачивания в любое время.
+  </p>
+
+</div>
+
+</body>
+</html>
